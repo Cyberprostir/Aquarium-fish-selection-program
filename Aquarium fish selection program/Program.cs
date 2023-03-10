@@ -166,7 +166,7 @@ namespace Aquarium_fish_selection_program
 
                 
                 int maxVol = 0;
-                int[] arrfish = new int[5];
+                //int[] arrfish = new int[5];
                 int currentCost;
                 int currentVolume;
 
@@ -184,11 +184,11 @@ namespace Aquarium_fish_selection_program
                             {
                                 if (currentVolume > maxVol)
                                 {
-                                    arrfish[0] = quantityLarge;
-                                    arrfish[1] = quantityMiddle;
-                                    arrfish[2] = quantitySmall;
-                                    arrfish[3] = currentCost;
-                                    arrfish[4] = currentVolume;
+                                    //arrfish[0] = quantityLarge;
+                                    //arrfish[1] = quantityMiddle;
+                                    //arrfish[2] = quantitySmall;
+                                    //arrfish[3] = currentCost;
+                                    //arrfish[4] = currentVolume;
                                     maxVol = currentVolume;
                                 }
                             }
@@ -196,7 +196,7 @@ namespace Aquarium_fish_selection_program
 
                     }
                 }
-                maxVol = arrfish[4];
+                //maxVol = arrfish[4];
                 for (int quantityLarge = 0; quantityLarge <= volume / volLarge; quantityLarge++)
                 {
                     for (int quantityMiddle = 0; quantityMiddle <= (volume - quantityLarge * volLarge) / (volMiddle); quantityMiddle++)
@@ -229,7 +229,7 @@ namespace Aquarium_fish_selection_program
             fishNumberArray[1] = new int[] { 0, 0, 0 };
             fishNumberArray[2] = new int[] { 0, 0, 0, 0 };
 
-            Console.WriteLine("\nПерейдемо до вибору рибок для вашого вашого акваріуму");
+            Console.WriteLine("\nПерейдемо до вибору рибок для вашого акваріуму");
             Console.WriteLine("Рибки в магазині складають 3 групи залежно від розміру.\n");
             Console.WriteLine("Група 1 - великі риби:");
             for (int i = 0; i < fishSizeArray[0].Length; i++)
